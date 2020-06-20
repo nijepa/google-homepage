@@ -1,0 +1,128 @@
+body {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+}
+
+ul {
+  display: flex;
+  margin: 0.5em 0.5em;
+  list-style: none;
+}
+
+ul li {
+  margin: 0.5em 0.5em;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#search_container {
+  position:relative;
+  direction: ltr;
+  width: 500px;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+#search {
+  height: 35px;
+  margin:0;
+  padding-left: 2em;
+  width: 100%;
+  border: 1px solid rgb(201, 204, 206);
+  border-radius: 0.7em;
+  font-size: 1.2em;
+  background: transparent;
+  height: 2.5em;
+}
+
+#search_img {
+  position:absolute;
+  bottom:15px;
+  left:15px;
+  width:32px;
+  height:32px;
+  opacity: 0.5;
+}
+
+#search:hover {
+  box-shadow: 1px 1px lightslategray;
+}
+
+#search:hover + #search_img {
+  opacity: 1;
+}
+
+.search-btns {
+  margin: 1em 1em;
+}
+
+.search-btn {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 1px solid transparent;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+
+.search-btn:hover {
+  border: 1px solid lightslategray;
+}
+
+.footer {
+  bottom: 0;
+  font-size: 1.25rem;
+  width: 100%;
+  background-color: rgb(235, 233, 233);
+  border-top: 1px solid #ccc;
+
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: dimgray;
+}
+
+.a_info {
+  color: royalblue;
+}
+
+p {
+  color: dimgray;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
